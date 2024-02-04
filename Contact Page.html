@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Style Sheet.css" rel="stylesheet">
+        <link href="Function.js" rel="js">
+        <link href="data.json" rel="json" type="text/json">
+        <title>My First Web Page</title>
+        <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+              $('.hoverover').hover(
+                function() {
+                  $('.hover-image', this).toggle();
+                  $('.default-image', this).toggle();
+                }
+              );
+            });
+        </script>
+</head>
+<body>
+    <header>
+        <div class="Top_Flex">
+            <div class="TT">
+                <button class="UButton" onclick="window.location.href='index.html'" style="float:left;">
+                Home Page
+                </button>
+            </div>
+            <div class="TT">
+                <h1>Contact</h1>
+            </div>
+            <div class="TT">
+                <img src="LOGO.png" style="height:80px; width: 80px;">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="Flex">
+            <div class="Box">
+                <div class="hoverover">
+                    <img src="BAP.png" alt="Black apple plant" class="default-image">
+                    <img src="BBP.png" alt="image2" class="hover-image" style="display: none;" >
+                </div>            
+            </div>
+            <div class="Box" id="TEST">
+                <H2>(323)-323-3234<br>Example@Email.com<br>Location: USA</H2>
+            </div>
+        </div>
+        <center>
+            <form action="NOPE" method="post">
+                <label for="name">Name:</label>
+                <input type="text" class="input" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" class="input" id="email" name="email" placeholder="Email address" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="comment" cols="20" rows="4" required></textarea>
+                <input type="submit" class="input" value="Send Message">
+            </form>
+        </center>
+    </main>
+    <footer>
+        <div class="Flex">
+            <button class="FootB" onclick="window.location.href='index.html'">
+                <b>Home Page</b>
+            </button>
+            <button class="FootB" onclick="window.location.href='Contact Page.html'">
+                <b>Contact Page</b>
+            </button>
+            <button class="FootB" onclick="window.location.href='Service PAge.html'">
+                <b>Service Page</b>
+            </button>
+
+        </div>
+    </footer>
+</body>
+</html>

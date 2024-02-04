@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style Sheet.css" rel="stylesheet">
+    <title>My First Web Page</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+\integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="Top_Flex">
+            <div class="TT">
+                <button class="UButton" onclick="window.location.href='Contact Page.html'" style="float:left;">
+                    Contact Page
+                </button>
+            </div>
+            <div class="TT">
+                <h1>WELCOME</h1>
+            </div>
+            <div class="TT">
+                <img src="LOGO.png" style="height:80px; width: 80px;">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="Center">
+            <h2>
+                Welcome to my webpage
+            </h2>
+            <div class="img-zoom-container">
+                <div id="myresult" class="img-zoom-result"></div>
+                <img id="myimage" src="Black Tomato.png" alt="Picture of a very dark Tomato">
+                <div id="myresult" class="img-zoom-result"></div>
+            </div> <br>
+            <br><button class="UButton" onclick="window.location.href='Service Page.html'">Service Page</button>
+        </div>
+    </main>
+    <footer>
+        <div class="Flex">
+            <button class="FootB" onclick="window.location.href='index.html'">
+                <b>Home Page</b>
+            </button>
+            <button class="FootB" onclick="window.location.href='Contact Page.html'">
+                <b>Contact Page</b>
+            </button>
+            <button class="FootB" onclick="window.location.href='Service Page.html'">
+                <b>Service Page</b>
+            </button>
+
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Function.js"></script>
+    <script>
+        imageZoom("myimage", "myresult");
+    </script></body></html>
